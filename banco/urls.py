@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from contas.views import mostrar_hello 
+# from contas.views import mostrar_hello
+from contas.views import mostrar_formulario_cadastro 
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mostrar_hello)
+    # path('', mostrar_hello),
+    path('', mostrar_formulario_cadastro)
 ]
